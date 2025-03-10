@@ -1,4 +1,4 @@
-package ru.normno.coinmarketcap.util
+package ru.normno.coinmarketcap.core.domain.util
 
 typealias DomainError = Error
 

@@ -1,6 +1,5 @@
-package ru.normno.coinmarketcap.presentation.coin_list.components
+package ru.normno.coinmarketcap.crypto.coin_list.components
 
-import android.R.attr.text
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
@@ -21,9 +20,9 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import ru.normno.coinmarketcap.presentation.model.DisplayableNumber
-import ru.normno.coinmarketcap.ui.theme.CoinMarketCapTheme
-import ru.normno.coinmarketcap.ui.theme.greenBackground
+import ru.normno.coinmarketcap.crypto.model.DisplayableNumber
+import ru.normno.coinmarketcap.crypto.ui.theme.CoinMarketCapTheme
+import ru.normno.coinmarketcap.crypto.ui.theme.greenBackground
 
 @Composable
 fun PriceChange(

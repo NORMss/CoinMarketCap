@@ -1,4 +1,4 @@
-package ru.normno.coinmarketcap.util
+package ru.normno.coinmarketcap.core.presentation.util
 
 import ru.normno.coinmarketcap.R
 

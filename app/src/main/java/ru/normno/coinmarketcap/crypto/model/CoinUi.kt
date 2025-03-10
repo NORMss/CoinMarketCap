@@ -1,8 +1,8 @@
-package ru.normno.coinmarketcap.presentation.model
+package ru.normno.coinmarketcap.crypto.model
 
 import androidx.annotation.DrawableRes
-import ru.normno.coinmarketcap.domain.Coin
-import ru.normno.coinmarketcap.util.getDrawableIdForCoin
+import ru.normno.coinmarketcap.crypto.domain.Coin
+import ru.normno.coinmarketcap.core.presentation.util.getDrawableIdForCoin
 import java.text.NumberFormat
 import java.util.Locale
 

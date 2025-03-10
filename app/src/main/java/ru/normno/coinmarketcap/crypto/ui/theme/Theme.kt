@@ -1,6 +1,5 @@
-package ru.normno.coinmarketcap.ui.theme
+package ru.normno.coinmarketcap.crypto.ui.theme
 
-import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme

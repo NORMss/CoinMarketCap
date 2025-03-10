@@ -1,7 +1,7 @@
-package ru.normno.coinmarketcap.presentation.coin_list
+package ru.normno.coinmarketcap.crypto.coin_list
 
 import androidx.compose.runtime.Immutable
-import ru.normno.coinmarketcap.presentation.model.CoinUi
+import ru.normno.coinmarketcap.crypto.model.CoinUi
 
 @Immutable
 data class CoinListState(

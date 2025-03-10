@@ -1,4 +1,4 @@
-package ru.normno.coinmarketcap.domain
+package ru.normno.coinmarketcap.crypto.domain
 
 data class Coin(
     val id: String,

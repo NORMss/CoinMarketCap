@@ -1,4 +1,4 @@
-package ru.normno.coinmarketcap.ui.theme
+package ru.normno.coinmarketcap.crypto.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

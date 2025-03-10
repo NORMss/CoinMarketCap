@@ -1,4 +1,4 @@
-package ru.normno.coinmarketcap.crypto.coin_list
+package ru.normno.coinmarketcap.crypto.presentation.coin_list
 
 import androidx.compose.runtime.Immutable
 import ru.normno.coinmarketcap.crypto.model.CoinUi

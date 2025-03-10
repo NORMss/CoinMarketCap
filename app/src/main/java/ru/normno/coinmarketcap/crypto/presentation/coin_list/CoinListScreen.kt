@@ -1,4 +1,4 @@
-package ru.normno.coinmarketcap.crypto.coin_list
+package ru.normno.coinmarketcap.crypto.presentation.coin_list
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -15,7 +15,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
 import ru.normno.coinmarketcap.crypto.domain.Coin
-import ru.normno.coinmarketcap.crypto.coin_list.components.CoinListItem
+import ru.normno.coinmarketcap.crypto.presentation.coin_list.components.CoinListItem
 import ru.normno.coinmarketcap.crypto.model.toCoinUi
 import ru.normno.coinmarketcap.crypto.ui.theme.CoinMarketCapTheme
 

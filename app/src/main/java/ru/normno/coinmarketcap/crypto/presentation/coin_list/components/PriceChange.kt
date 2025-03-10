@@ -1,4 +1,4 @@
-package ru.normno.coinmarketcap.crypto.coin_list.components
+package ru.normno.coinmarketcap.crypto.presentation.coin_list.components
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Row

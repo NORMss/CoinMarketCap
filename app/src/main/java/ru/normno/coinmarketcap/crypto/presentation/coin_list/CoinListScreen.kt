@@ -43,7 +43,9 @@ fun CoinListScreen(
             ) { coinUi ->
                 CoinListItem(
                     coin = coinUi,
-                    onClick = {},
+                    onClick = {
+
+                    },
                 )
                 HorizontalDivider()
             }
@@ -61,7 +63,7 @@ private fun CoinListScreenPreview() {
                 coins = coins,
             ),
             modifier = Modifier
-                .background(MaterialTheme.colorScheme.primaryContainer)
+                .background(MaterialTheme.colorScheme.primaryContainer),
         )
     }
 }

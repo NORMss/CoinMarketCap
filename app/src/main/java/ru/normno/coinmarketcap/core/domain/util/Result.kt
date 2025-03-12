@@ -29,4 +29,14 @@ fun <T, E : Error> Result<T, E>.onSuccess(action: (T) -> Unit): Result<T, E> {
     }
 }
 
+fun <T, E : Error> Result<T, E>.onError(action: (E) -> Unit): Result<T, E> {
+    return when (this) {
+        is Result.Success -> this
+        is Result.Error -> {
+            action(error)
+            this
+        }
+    }
+}
+
 typealias EmptyResult<E> = Result<Unit, E>

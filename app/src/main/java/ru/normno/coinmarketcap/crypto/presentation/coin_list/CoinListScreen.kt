@@ -15,8 +15,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
 import ru.normno.coinmarketcap.crypto.domain.Coin
-import ru.normno.coinmarketcap.crypto.presentation.coin_list.components.CoinListItem
 import ru.normno.coinmarketcap.crypto.model.toCoinUi
+import ru.normno.coinmarketcap.crypto.presentation.coin_list.components.CoinListItem
 import ru.normno.coinmarketcap.crypto.ui.theme.CoinMarketCapTheme
 
 @Composable
@@ -24,6 +24,7 @@ fun CoinListScreen(
     state: CoinListState,
     modifier: Modifier = Modifier,
 ) {
+
     if (state.isLoading) {
         Box(
             modifier = modifier

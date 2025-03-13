@@ -18,7 +18,7 @@ fun <T, E : Error> Result<T, E>.asEmptyDataResult(): EmptyResult<E> {
     return map {}
 }
 
-fun <T, E : Error> Result<T, E>.onSuccess(action: (T) -> Unit): Result<T, E> {
+inline fun <T, E : Error> Result<T, E>.onSuccess(action: (T) -> Unit): Result<T, E> {
     return when (this) {
         is Result.Success -> {
             action(data)
@@ -29,7 +29,7 @@ fun <T, E : Error> Result<T, E>.onSuccess(action: (T) -> Unit): Result<T, E> {
     }
 }
 
-fun <T, E : Error> Result<T, E>.onError(action: (E) -> Unit): Result<T, E> {
+inline fun <T, E : Error> Result<T, E>.onError(action: (E) -> Unit): Result<T, E> {
     return when (this) {
         is Result.Success -> this
         is Result.Error -> {

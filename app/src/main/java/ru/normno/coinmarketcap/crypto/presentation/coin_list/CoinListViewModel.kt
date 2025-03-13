@@ -21,6 +21,7 @@ class CoinListViewModel(
         field = MutableStateFlow(CoinListState())
 
     init {
+        loadCoins()
         state
             .onStart {
                 loadCoins()
@@ -52,7 +53,9 @@ class CoinListViewModel(
                 )
             }
             coinDataSource
-                .getCoins()
+                .getCoins(
+                    token = "891125dda9bc47cfb7074208f2f04eff95affd0ad5c0b1b946f19f95e45ae120"
+                )
                 .onSuccess { coins ->
                     state.update {
                         it.copy(

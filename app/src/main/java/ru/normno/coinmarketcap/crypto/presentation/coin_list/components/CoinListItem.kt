@@ -75,13 +75,15 @@ fun CoinListItem(
                 fontWeight = FontWeight.SemiBold,
                 color = contentColor,
             )
-            Spacer(
-                modifier = Modifier
-                    .height(8.dp)
-            )
-            PriceChange(
-                change = coin.changePercent24Hr,
-            )
+            coin.changePercent24Hr?.let {
+                Spacer(
+                    modifier = Modifier
+                        .height(8.dp)
+                )
+                PriceChange(
+                    change = coin.changePercent24Hr,
+                )
+            }
         }
     }
 }

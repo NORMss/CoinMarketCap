@@ -18,14 +18,10 @@ import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.graphics.vector.ImageVector
-import androidx.compose.ui.res.vectorResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import ru.normno.coinmarketcap.R
-import ru.normno.coinmarketcap.crypto.ui.theme.CoinMarketCapTheme
 
 @Composable
 fun InfoCard(
@@ -101,18 +97,6 @@ fun InfoCard(
             fontSize = 12.sp,
             fontWeight = FontWeight.Light,
             color = contentColor,
-        )
-    }
-}
-
-@PreviewLightDark
-@Composable
-private fun InfoCardPreview() {
-    CoinMarketCapTheme {
-        InfoCard(
-            title = "Price",
-            formattedText = "$ 84,443.13",
-            icon = ImageVector.vectorResource(id = R.drawable.dollar),
         )
     }
 }

@@ -7,4 +7,7 @@
     <string name="serialization_error">Serialization Error</string>
     <string name="unknown_error">Unknown Error</string>
     <string name="token_error">Token Error</string>
+    <string name="market_cap">Market Cap</string>
+    <string name="price">Price</string>
+    <string name="change_last_24h">Change Last 24h</string>
 </resources>

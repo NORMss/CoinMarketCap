@@ -15,6 +15,7 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import org.koin.androidx.compose.koinViewModel
 import ru.normno.coinmarketcap.core.presentation.util.ObserveAsEvents
 import ru.normno.coinmarketcap.core.presentation.util.toString
+import ru.normno.coinmarketcap.crypto.presentation.coin_detail.CoinDetailScreen
 import ru.normno.coinmarketcap.crypto.presentation.coin_list.CoinListEvent
 import ru.normno.coinmarketcap.crypto.presentation.coin_list.CoinListScreen
 import ru.normno.coinmarketcap.crypto.presentation.coin_list.CoinListViewModel
@@ -43,11 +44,24 @@ class MainActivity : ComponentActivity() {
                             }
                         }
                     }
-                    CoinListScreen(
-                        state = state,
-                        modifier = Modifier
-                            .padding(innerPadding)
-                    )
+
+                    when {
+                        state.selectedCoin != null -> {
+                            CoinDetailScreen(
+                                state = state,
+                                modifier = Modifier.padding(innerPadding)
+                            )
+                        }
+
+                        else -> {
+                            CoinListScreen(
+                                state = state,
+                                modifier = Modifier.padding(innerPadding),
+                                onAction = viewModel::onAction,
+                            )
+                        }
+                    }
+
                 }
             }
         }

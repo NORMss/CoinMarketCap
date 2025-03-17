@@ -23,6 +23,7 @@ import ru.normno.coinmarketcap.crypto.ui.theme.CoinMarketCapTheme
 fun CoinListScreen(
     state: CoinListState,
     modifier: Modifier = Modifier,
+    onAction: (CoinListAction) -> Unit,
 ) {
 
     if (state.isLoading) {
@@ -65,6 +66,7 @@ private fun CoinListScreenPreview() {
             ),
             modifier = Modifier
                 .background(MaterialTheme.colorScheme.primaryContainer),
+            onAction = TODO()
         )
     }
 }

@@ -41,7 +41,11 @@ class CoinListViewModel(
     fun onAction(action: CoinListAction) {
         when (action) {
             is CoinListAction.OnClickCoin -> {
-
+                state.update {
+                    it.copy(
+                        selectedCoin = action.coinUI,
+                    )
+                }
             }
 
             CoinListAction.OnRefresh -> {
@@ -59,7 +63,7 @@ class CoinListViewModel(
             }
             coinDataSource
                 .getCoins(
-                    token = "891125dda9bc47cfb7074208f2f04eff95affd0ad5c0b1b946f19f95e45ae120"
+                    token = "7897b43b1983aecd76db597cdc5d428e51b430200a83761716aee595423457bf"
                 )
                 .onSuccess { coins ->
                     state.update {

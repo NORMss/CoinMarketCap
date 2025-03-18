@@ -46,7 +46,7 @@ fun CoinListScreen(
                 CoinListItem(
                     coin = coinUi,
                     onClick = {
-
+                        onAction(CoinListAction.OnClickCoin(coinUi))
                     },
                 )
                 HorizontalDivider()
